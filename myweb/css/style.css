@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .body {
+    background: url(http://localhost/newphpwebsite/images/weddings.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    perspective: 200px;
+}
+
+.card img {
+    height: 200px;
+    transform: rotateX(20deg)
+}*/
+form {
+    height: 100vh;
+
+}

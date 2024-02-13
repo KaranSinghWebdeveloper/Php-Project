@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100vh;
+    background: linear-gradient(94deg, #DB01FC, #00ffa199);
+    z-index: 5000000000000000000;
+    transition: all .6s ease;
+    overflow: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    margin: 10px 0px;
+    font-weight: bold;
+    transition: all .7s ease;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background: lightblue;
+    color: black;
+    box-shadow: 0px 0px 7px #ce07ff inset;
+}
+
+.sidebar i {
+    font-size: 21px;
+    color: rgb(253 255 0);
+    margin: 1px 9px 0px 0px;
+}
+
+.body {
+    margin-left: 260px;
+}
+
+.mycards {
+    background: linear-gradient(45deg, #d300ff, #ff8100) !important;
+    color: white;
+    box-shadow: 1px 1px 11px #303030cc;
+    font-family: math;
+}
+
+.mycards span {
+    background: black;
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid;
+    top: -20px;
+    left: 44%;
+}
+
+.mycards span i {
+    color: #00fff9;
+}
+
+h2 {
+    font-size: 30px !important;
+}
+
+.dropdown-menu {
+    min-width: 0px !important;
+}
+
+i {
+    font-size: 20px;
+    color: blue;
+    margin: 1px 3px 0px 0px;
+}
+
+.profile {
+    width: 36px;
+    box-shadow: 0px 0px 13px cadetblue;
+    border-radius: 10px;
+}
+
+.cut {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background: red;
+    border-radius: 50px;
+    color: white;
+    padding: 0px 8px;
+    font-weight: bold;
+    display: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:768px) {
+
+    h2 {
+        font-size: 20px !important;
+    }
+
+    .body {
+        margin-left: 143px;
+    }
+
+    .sidebar {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width:1117px) {
+    .sidebar a {
+        padding: 3px;
+        margin: 7px 0px;
+        font-size: 12px;
+        transition: all .7s ease;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width:934px) {
+    .sidebar {
+        margin-left: calc(100% - 140%);
+        width: 39%;
+    }
+
+    .navbar .canves {
+        display: block !important;
+    }
+
+    .cut {
+        display: block;
+    }
+
+    .body {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.navbar .canves {
+    display: none;
+    margin-right: auto;
+}
+
+.navbar span i {
+    color: black;
+}
+
+.card .card-body p {
+    margin: 0;
+    font-size: 68px;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dactiveAdmin {
+    filter: drop-shadow(0px 0px 6px black);
+}
+
+.activeAdmin {
+    animation: animate .9s linear infinite;
+}
+
+.status {
+    border-radius: 50px;
+}
+
+@keyframes animate {
+    0% {
+        filter: drop-shadow(0px 0px 5px #ff0000);
+    }
+
+    100% {
+        filter: drop-shadow(0px 0px 0px #1e00ff);
+    }
+}
+
+
+.status i {
+    color: #0600ff66;
+    margin: 0;
+    padding: 0;
+}
+
+.activeAdmin i {
+    color: #00fe0b;
+    border-radius: 50px;
+}
+
+
+.mypages {
+    display: none;
+}
+
+.hoverpages:hover .mypages {
+    display: block;
+}
+
+footer {
+    background: linear-gradient(94deg, #DB01FC, #00ffa199);
+}
+
+.status {
+    filter: drop-shadow(3px 2px 3px black) !important;
+}
